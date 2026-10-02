@@ -1,0 +1,57 @@
+{
+    "Table": {
+        "Name": "bronze_events",
+        "DatabaseName": "data_platform",
+        "CreateTime": "2026-09-29T21:19:22.481496+01:00",
+        "StorageDescriptor": {
+            "Columns": [
+                {
+                    "Name": "event_id",
+                    "Type": "string",
+                    "Comment": "",
+                    "Parameters": {}
+                },
+                {
+                    "Name": "user_id",
+                    "Type": "string",
+                    "Comment": "",
+                    "Parameters": {}
+                },
+                {
+                    "Name": "event_type",
+                    "Type": "string",
+                    "Comment": "",
+                    "Parameters": {}
+                },
+                {
+                    "Name": "product_id",
+                    "Type": "string",
+                    "Comment": "",
+                    "Parameters": {}
+                },
+                {
+                    "Name": "amount",
+                    "Type": "double",
+                    "Comment": "",
+                    "Parameters": {}
+                },
+                {
+                    "Name": "currency",
+                    "Type": "string",
+                    "Comment": "",
+                    "Parameters": {}
+                }
+            ],
+            "Location": "s3://data-platform-bronze/events/",
+            "InputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+            "OutputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+            "SerdeInfo": {
+                "SerializationLibrary": "org.openx.data.jsonserde.JsonSerDe"
+            },
+            "Parameters": {}
+        },
+        "PartitionKeys": [],
+        "TableType": "EXTERNAL_TABLE",
+        "VersionId": "0"
+    }
+}

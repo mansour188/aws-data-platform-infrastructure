@@ -13,3 +13,8 @@ variable "raw_bucket_name" {
   description = "S3 bucket used for raw data ingestion"
   type        = string
 }
+
+variable "bronze_bucket_name" {
+  description = "Bronze S3 bucket used by the transformer Lambda"
+  type        = string
+}

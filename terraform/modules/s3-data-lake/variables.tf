@@ -14,3 +14,7 @@ variable "project" {
   type        = string
   default     = "aws-data-platform"
 }
+variable "layer" {
+  description = "Data lake layer"
+  type        = string
+}

@@ -40,3 +40,4 @@ variable "raw_bucket_name" {
   default     = "data-platform-raw"
 }
 
+

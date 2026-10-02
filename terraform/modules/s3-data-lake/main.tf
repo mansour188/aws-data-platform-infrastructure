@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "this" {
   tags = {
     Environment = var.environment
     Project     = var.project
-    Layer       = "raw"
+    Layer       = var.layer
   }
 }
 

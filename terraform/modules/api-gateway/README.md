@@ -37,3 +37,27 @@
      │ s3:PutObject
      ▼
     S3
+
+
+                     API Gateway
+                      │
+                      ▼
+                   Lambda
+                      │
+                      ▼
+                  S3 RAW
+                      │
+                      ▼
+              ┌───────────────┐
+              │ Bronze Layer  │
+              │   Transform   │
+              └───────────────┘
+                      │
+                      ▼
+              ┌───────────────┐
+              │ Silver Layer  │
+              │ Clean/Validate│
+              └───────────────┘
+                      │
+                      ▼
+                Gold / Athena
